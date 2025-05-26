@@ -105,8 +105,8 @@ Le package intègre :
 
 -   `eusilc_jck` : poids répliqués simulés selon le protocole jackknife.
 
-Pour les utilisateur·rices disponsant d'un accès aux micros-données,
-Statbel mettra à disposition le fichier des poids répliqués officiels.
+Certains utilisateur·rices disposant d'un accès aux micro-données
+pouvant faire une demande pour obtenir le fichier des poids répliqués.
 
 ## Auteurs
 

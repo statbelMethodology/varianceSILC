@@ -471,11 +471,11 @@ survey::svyby(~eqIncome,~rb090,eusilc_design_v2,survey::svymean)
 
 ## Données de BE-SILC 2024
 
-Tous nos utilisateurs ayant accès aux micro-données pourront à présent
-obtenir le fichier des poids répliqués. Celui-ci sera sous le même
+Certains de nos utilisateurs ayant accès aux micro-données pourront à présent
+demander le fichier des poids répliqués (décision prise par le service thématique de Statbel). Celui-ci sera sous le même
 format que le fichier d'exemple de la section précédente : identifiant
 ménage, strate et PSU, identifiant de la réplication avec la PSU retiré,
-la strate et le facteur de correction.
+la strate et le facteur de correction. Nous montrons ici un usage possible avec les données de SILC 2024.
 
 ```{r include=FALSE, echo=FALSE, results = FALSE}
 path <- "Z:/E8/0514-8532-SILC/SILC-inhoudelijk/SILC Méthodo/Macros génériques/VAR/TEST/"
@@ -771,9 +771,9 @@ results_v2 <- list_vec_breaks %>% map_df(~{
 ```
 
 On remarque que les écarts entre les deux estimations de variance sont
-assez faibles pour des grands échantillons, et c'est pour des
-sous-populations très petites (donc déjà des estimateurs de variance peu
-fiables) que les écarts entre les deux méthodes est forte. Je ne vois
+assez faibles pour des grands échantillons. À l'inverse, pour des
+sous-populations très petites, donc des estimateurs de variance peu
+fiables, les écarts entre les deux méthodes est forte. Je ne vois
 pas de biais à la hausse ou à la baisse entre les deux méthodes.
 
 ```{r}
@@ -826,7 +826,7 @@ eusilc_prop$graph
 ```
 
 Les variances obtenues ne sont par contre pas celles obtenues avec le
-package `survey`.
+package `survey`. Il faudra encore en étudier les raisons.
 
 ```{r}
 resultats_silc_v2 %>% 
