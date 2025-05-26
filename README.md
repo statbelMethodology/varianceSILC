@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # varianceSILC
 
 <!-- badges: start -->
@@ -49,7 +43,7 @@ avec les données SILC de Statbel.
 
 ``` r
 # En local depuis GitHub
-# remotes::install_github("tdelc/varianceSILC")
+# remotes::install_github("statbelMethodology/varianceSILC")
 ```
 
 ## Exemple
