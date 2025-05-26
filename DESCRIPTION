@@ -1,0 +1,42 @@
+Package: varianceSILC
+Type: Package
+Title: Estimation de la variance dans SILC avec poids répliqués
+Version: 0.1.0
+Authors@R: 
+    person(given = "Thomas",
+           family = "Delclite",
+           role = c("aut", "cre"),
+           email = "thomas.delclite@economie.fgov.be",
+           comment = "Statbel, Institut National de Statistique")
+Description: Fournit des fonctions pour estimer la variance des indicateurs issus de l'enquête SILC
+    à l'aide de poids répliqués construits selon la méthode du jackknife stratifié, en cohérence
+    avec le plan de sondage utilisé par Statbel. Inclut des fonctions alternatives à celles du
+    package 'survey' pour une meilleure prise en compte des pseudo-strates.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 4.0)
+Imports:
+    dplyr,
+    tidyr,
+    purrr,
+    stringr,
+    tibble,
+    readr,
+    survey,
+    ggplot2,
+    magrittr,
+    laeken,
+    stats
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat,
+    fonctionr,
+    tidyverse
+VignetteBuilder: knitr
+URL: https://statbel.fgov.be
+BugReports: https://github.com/tdelc/varianceSILC/issues
+Config/Needs/website: rmarkdown
