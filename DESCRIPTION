@@ -7,7 +7,7 @@ Authors@R:
            family = "Delclite",
            role = c("aut", "cre"),
            email = "thomas.delclite@economie.fgov.be",
-           comment = "Statbel, Institut National de Statistique")
+           comment = "Statbel, l'Office National de Statistique")
 Description: Fournit des fonctions pour estimer la variance des indicateurs issus de l'enquête SILC
     à l'aide de poids répliqués construits selon la méthode du jackknife stratifié, en cohérence
     avec le plan de sondage utilisé par Statbel. Inclut des fonctions alternatives à celles du
@@ -38,5 +38,5 @@ Suggests:
     tidyverse
 VignetteBuilder: knitr
 URL: https://statbel.fgov.be
-BugReports: https://github.com/tdelc/varianceSILC/issues
+BugReports: https://github.com/statbelMethodology/varianceSILC/issues
 Config/Needs/website: rmarkdown
